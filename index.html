@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Practice</title>
+</head>
+<body>
+    <p>My List</p>
+    <ul id="myList">
+        <li class="item">Lorem8</li>
+        <li class="item">Lorem8</li>
+        <li class="item">Lorem8</li>
+        <li class="item">Lorem8</li>
+        <li class="item">Lorem8</li>
+    </ul>
+    <button id="addNew">Add New Item</button>
+
+    <script>
+        // var items = document.getElementsByClassName('item');
+        // for(let i = 0; i < items.length; i++){
+        //     var item = items[i]
+        //     item.addEventListener('click', function(event){
+        //         event.target.parentNode.removeChild(event.target);
+        //     })
+        // }
+        // document.getElementById('addNew').addEventListener('click', function(event){
+        //     var itemParent = document.getElementById('myList');
+        //     var newItem = document.createElement('li');
+        //     newItem.innerText = 'Brand New Item';
+        //     itemParent.appendChild(newItem);
+        // })
+        // document.getElementById('myList').addEventListener('click', function(event){
+        //     event.target.parentNode.removeChild(event.target);
+        // })
+        function evenify_all(nums){
+            for(i = 0; i < nums.length; i++){
+                const num = nums[i]
+                if(num % 2 == 0){
+                    console.log(num, ': is even number');
+                }
+                else{
+                    console.log(num*2, ':is odd number');
+                }
+            }
+        }
+
+        var nums = [5, 10, 3, 8, 13, 15, 18]
+        evenify_all(nums);
+
+        var friends_age = [12, 18, 13, 8, 15, 20, 23]
+        evenify_all(friends_age);
+    </script>
+    
+</body>
+</html>
